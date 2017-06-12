@@ -1,0 +1,63 @@
+.flick.template {
+  display: none;
+}
+
+.flick {
+  border: 2px solid black;
+  clear: both;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  transition: 0.25s;
+}
+
+.flick + .flick {
+  border-top: 0;
+}
+
+.flick-name {
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.actions.button-group {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.flick.fav {
+  background-color: #ffc656;
+  border-color: #ffa807;
+}
+
+.flick:first-child button.move-up,
+.flick:last-child button.move-down {
+  background-color: #ddd;
+  color: #eee;
+  cursor: not-allowed;
+}
+body {
+  /*background: linear-gradient(lightgoldenrodyellow,lightcoral);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;*/
+   background: linear-gradient(to bottom, rgba(3,75, 82, 1) 0%, rgba(3,75, 82, 0) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.row {
+    background-color: lightskyblue;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    opacity: 0.8;
+   border: 1px solid black;
+}
+#j {
+    font-family: Jazz LET, fantasy;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}

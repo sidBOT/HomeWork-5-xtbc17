@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jeffervescence</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+    <link rel="stylesheet" href="CSS/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="medium-8 medium-offset-2 column">
+        <h1 id="j">List</h1>
+        <form id="flick-form">
+          <div class="input-group">
+            <input
+              type="text"
+              class="input-group-field"
+              name="flickName"
+              placeholder="Name a flick"
+              autofocus
+              required
+            >
+            <select name="category"required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Movies">Movies</option>
+                            <option value="Cars">Cars</option>
+                        </select>
+            <div class="input-group-button">
+              <button 
+                class="success button"
+                type="submit"
+              >
+                <i
+                  class="fa fa-plus"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-5  column">
+        <h3>Movies</h3>
+        <ul class="no-bullet" id="flick-list"></ul>
+      </div>
+
+
+    
+      <div class="medium-5  column">
+         <h3>Cars</h3>
+        <ul class="no-bullet" id="flick-list1"></ul>
+      </div>
+  </div>
+
+    <li class="flick template">
+      <span class="flick-name"></span>
+      <span class="actions button-group">
+        <button class="edit button">
+          <i
+            class="fa fa-pencil"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <button class="fav button warning">
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <button class="move-up button">
+          <i
+            class="fa fa-arrow-up"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <button class="move-down button">
+          <i
+            class="fa fa-arrow-down"
+            aria-hidden="true"
+          ></i>
+        </button>
+        <button class="remove button alert">
+          <i
+            class="fa fa-trash-o"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </span>
+    </li>
+
+    <script src="app.js"></script>
+  </body>
+</html>

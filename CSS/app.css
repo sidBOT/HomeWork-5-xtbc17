@@ -50,7 +50,7 @@ body {
 
 }
 .row {
-    background-color: lightskyblue;
+    background-color: lightsteelblue;
     margin-left: 10rem;
     margin-right: 10rem;
     opacity: 0.8;
@@ -60,4 +60,10 @@ body {
     font-family: Jazz LET, fantasy;
     padding-top: 1rem;
     padding-left: 2rem;
+
 }
+h3 {
+  text-align: center;
+  color: darkred;
+}
+

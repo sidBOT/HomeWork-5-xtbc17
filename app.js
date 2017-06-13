@@ -1,3 +1,4 @@
+var i1 =0
 class App {
   constructor(selectors) {
     this.flicks = []
@@ -8,11 +9,14 @@ class App {
     this.list1 = document
       .querySelector('#flick-list1')
     this.template = document
-      .querySelector(selectors.templateSelector)
+      .querySelector('.template')
     document
       .querySelector('#flick-form')
       .addEventListener('submit', this.addFlickViaForm.bind(this))
       this.max = JSON.parse(localStorage.getItem("max"))
+       var doc = document.getElementById("background");
+       doc.style.backgroundColor = "#42f4c2"
+      setInterval(this.change, 5000);
 
     this.load()
   }
@@ -234,8 +238,14 @@ class App {
       this.edit(flick, ev)
     }
   }
+  change() {
+    var doc = document.getElementById("background");
+    var color = ["#41f4eb", "#41dcf4", "41b5f4", "#4185f4","#42f4c2"]
+    doc.style.backgroundColor = color[i1]
+    doc.style.transition = 1
+    i1 = (i1 + 1) % color.length;
+}
+  
 }
 
-const app = new App({
-  templateSelector: '.flick.template',
-})
+const app = new App()
